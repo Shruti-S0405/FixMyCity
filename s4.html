@@ -1,0 +1,89 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #ea2a33;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col bg-white">
+<header class="sticky top-0 z-10 bg-white/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-3">
+<button class="text-gray-700">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold text-gray-900">FixMyCity</h1>
+<div class="w-8"></div>
+</div>
+</header>
+<main class="flex-1">
+<div class="relative h-full">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXncR7Kl13HXYzbgmfna_xSgXArEUqUp5COecKYagI0cWYR8oGjOSh6hn8QPukeFbgcw4HgYRDA9_kII3UUfRUOn0X3VVi1bxFMLePia9lsIm0FW3uTeSwnshiqDOeZlh0sg62RIUKNhC2pw6tGzanY9NxPeNino_uXTW_t2BhrNlNwIK7YoLS9pJnqnt35hcQOU0OBMB7avuRHy2ZsWBCh1d1D9gS51yggLjc4ghsof_q9G7-K_YD2tGLog-muvxIuTeGUTWN7lvn");'></div>
+<div class="relative flex flex-col h-full p-4">
+<div class="flex items-center bg-white rounded-full shadow-md">
+<span class="material-symbols-outlined pl-3 text-gray-500">search</span>
+<input class="flex-1 bg-transparent text-gray-800 placeholder:text-gray-500 focus:outline-none px-4 py-3" placeholder="Search for an address" value=""/>
+</div>
+<div class="mt-auto flex justify-end">
+<div class="flex flex-col items-center gap-3">
+<div class="flex flex-col bg-white rounded-full shadow-md">
+<button class="p-3 text-gray-700">
+<span class="material-symbols-outlined">add</span>
+</button>
+<div class="h-px bg-gray-200"></div>
+<button class="p-3 text-gray-700">
+<span class="material-symbols-outlined">remove</span>
+</button>
+</div>
+<button class="flex size-12 items-center justify-center rounded-full bg-white shadow-md">
+<span class="material-symbols-outlined text-blue-600">navigation</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-20 right-4 z-10">
+<button class="flex cursor-pointer items-center justify-center rounded-full h-14 px-5 bg-[var(--primary-color)] text-white shadow-lg">
+<span class="material-symbols-outlined mr-2">add</span>
+<span class="text-base font-bold">Report an issue</span>
+</button>
+</div>
+<nav class="sticky bottom-0 border-t border-gray-200 bg-white">
+<div class="flex justify-around py-2">
+<a class="flex flex-col items-center gap-1 text-gray-500" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs">Feed</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">map</span>
+<p class="text-xs font-semibold">Map</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500" href="#">
+<span class="material-symbols-outlined">checklist</span>
+<p class="text-xs">My Issues</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<p class="text-xs">Notifications</p>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

@@ -1,0 +1,99 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B600%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #ea2a33;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-white shadow-sm">
+<div class="flex items-center p-4">
+<button class="text-gray-600">
+<span class="material-symbols-outlined text-3xl">arrow_back_ios_new</span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold text-gray-900 pr-8">Notifications</h1>
+</div>
+</header>
+<main class="divide-y divide-gray-200">
+<div class="flex items-start gap-4 p-4 hover:bg-gray-100 transition-colors duration-200">
+<div class="flex items-center justify-center rounded-full bg-green-100 shrink-0 size-12 text-green-600">
+<span class="material-symbols-outlined">task_alt</span>
+</div>
+<div class="flex-1">
+<p class="text-gray-900 text-base font-semibold">Issue status changed</p>
+<p class="text-sm text-gray-500">Your report "Pothole on Main St" has been marked as <span class="font-semibold text-green-600">Resolved</span>.</p>
+<p class="text-xs text-gray-400 mt-1">1d ago</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 hover:bg-gray-100 transition-colors duration-200">
+<div class="flex items-center justify-center rounded-full bg-blue-100 shrink-0 size-12 text-blue-600">
+<span class="material-symbols-outlined">add_a_photo</span>
+</div>
+<div class="flex-1">
+<p class="text-gray-900 text-base font-semibold">Proof photo uploaded</p>
+<p class="text-sm text-gray-500">A city worker uploaded a new photo for "Broken Streetlight".</p>
+<p class="text-xs text-gray-400 mt-1">2d ago</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 hover:bg-gray-100 transition-colors duration-200">
+<div class="flex items-center justify-center rounded-full bg-orange-100 shrink-0 size-12 text-orange-600">
+<span class="material-symbols-outlined">arrow_upward</span>
+</div>
+<div class="flex-1">
+<p class="text-gray-900 text-base font-semibold">Issue upvoted</p>
+<p class="text-sm text-gray-500">Your issue "Graffiti on Park Wall" was upvoted.</p>
+<p class="text-xs text-gray-400 mt-1">3d ago</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 hover:bg-gray-100 transition-colors duration-200">
+<div class="flex items-center justify-center rounded-full bg-purple-100 shrink-0 size-12 text-purple-600">
+<span class="material-symbols-outlined">chat_bubble</span>
+</div>
+<div class="flex-1">
+<p class="text-gray-900 text-base font-semibold">New Comment</p>
+<p class="text-sm text-gray-500">Someone commented on your issue "Faded Crosswalk Lines".</p>
+<p class="text-xs text-gray-400 mt-1">4d ago</p>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-white border-t border-gray-200">
+<nav class="flex justify-around py-2">
+<a class="flex flex-col items-center justify-end gap-1 text-gray-500" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-medium">Feed</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-gray-500" href="#">
+<span class="material-symbols-outlined">map</span>
+<p class="text-xs font-medium">Map</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-gray-500" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+<p class="text-xs font-medium">My Issues</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">notifications_active</span>
+<p class="text-xs font-semibold">Notifications</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

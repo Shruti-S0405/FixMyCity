@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #ea2a33;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="flex flex-col">
+<header class="flex items-center bg-white p-4 justify-between sticky top-0 z-10 border-b border-gray-200">
+<button class="text-gray-700 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-100">
+<span class="material-symbols-outlined"> close </span>
+</button>
+<h1 class="text-gray-900 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">Report an Issue</h1>
+</header>
+<main class="p-4 space-y-6">
+<div class="space-y-2">
+<div class="aspect-video w-full rounded-xl bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBo_Rkc0xBDmQG_rwQR-cw12J6m3tKHoo70PhvHivVXZx6cVxqQKG4Wnc7y-GGaCDSidGVJTuGz6EB-tFe-FfjqDb2Ie6xvyaZlh7REeXFUwHF-XbROqEmVBBdZIxNz5ONcbq_30sW5_ak9XBiQ64VSm3KeU5T71uX4b347Njrjn_ead9LHaJBrkd66Qy-UMkOlXlKSBHIev0XWf2tToJa0fTTFYzgcaeAYSbNyi048GWUgZxFtQQRV9vg_cLsjipLq_jqJBjuzTCyh");'></div>
+<div class="grid grid-cols-2 gap-3">
+<button class="flex items-center justify-center gap-2 rounded-lg h-12 px-4 bg-gray-100 text-gray-800 text-sm font-semibold leading-normal hover:bg-gray-200">
+<span class="material-symbols-outlined text-xl"> photo_camera </span>
+<span class="truncate">Take Photo</span>
+</button>
+<button class="flex items-center justify-center gap-2 rounded-lg h-12 px-4 bg-gray-100 text-gray-800 text-sm font-semibold leading-normal hover:bg-gray-200">
+<span class="material-symbols-outlined text-xl"> photo_library </span>
+<span class="truncate">Upload Photo</span>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-xl border border-gray-200 divide-y divide-gray-200">
+<div class="flex items-center gap-4 px-4 py-3 justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-500"> location_on </span>
+<p class="text-gray-800 text-base font-medium leading-normal flex-1 truncate">Auto-tag Location</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-200 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-[var(--primary-color)]">
+<div class="h-full w-[27px] rounded-full bg-white transition-transform" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 1px 2px;"></div>
+<input checked="" class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-4 px-4 py-3 justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-500"> mic </span>
+<p class="text-gray-800 text-base font-medium leading-normal flex-1 truncate">Attach Voice Note</p>
+</div>
+<div class="shrink-0">
+<button class="text-gray-600 flex size-9 items-center justify-center rounded-full hover:bg-gray-100">
+<span class="material-symbols-outlined text-2xl"> add_circle_outline </span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-4 px-4 py-3 justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-500"> visibility_off </span>
+<p class="text-gray-800 text-base font-medium leading-normal flex-1 truncate">Post Anonymously</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-200 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-[var(--primary-color)]">
+<div class="h-full w-[27px] rounded-full bg-white transition-transform" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 1px 2px;"></div>
+<input class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-gray-800 text-base font-medium px-1">Description</label>
+<textarea class="form-input flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-xl text-gray-900 focus:outline-0 focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-color)] border border-gray-200 bg-white focus:border-[var(--primary-color)] min-h-36 placeholder:text-gray-500 p-4 text-base font-normal leading-normal" placeholder="Describe the issue in detail..."></textarea>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-white border-t border-gray-200 p-4">
+<button class="flex w-full items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-[var(--primary-color)] text-white text-lg font-bold leading-normal tracking-wide shadow-lg shadow-red-500/20 hover:bg-red-600 focus:outline-none focus:ring-4 focus:ring-red-300">
+<span class="truncate">Submit Issue</span>
+</button>
+</footer>
+</div>
+
+</body></html>

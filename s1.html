@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>FixMyCity</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #2563eb;--secondary-color: #10b981;}
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .polaroid-card {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+        .polaroid-card .image-container {
+            width: 100%;
+            padding-top: 75%;position: relative;
+        }
+        .polaroid-card .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .polaroid-card .content {
+            padding: 1rem;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-100">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden pb-20">
+<header class="sticky top-0 z-20 bg-white/90 backdrop-blur-md border-b border-gray-200">
+<div class="flex items-center justify-center p-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl text-[var(--primary-color)]">location_on</span>
+<span class="material-symbols-outlined text-2xl text-gray-700 -ml-5 mt-1">build</span>
+<h1 class="text-2xl font-bold text-gray-900 ml-1">FixMyCity</h1>
+</div>
+</div>
+</header>
+<main class="flex-1 space-y-6 bg-gray-100 p-4">
+<div class="polaroid-card">
+<div class="image-container">
+<img alt="Pothole on Elm Street" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd1jMT2ayTShuOBaCJLhpsiNWu_6idlhwn-j1Q22W10xcFbZQ6mqohHeZ5oykYfyXd_RwTgs7i-BX6AZY9peRaWWfmlc_brqGKfv5GiRD29IisI3QUncrObY-wpdDVB8BzW26ZB0gonyWPOW0eO7LL3I9PCitWiRJUD_QpNxrorlq8gVum5CEOyiN-mX3AF5YFJRb3-8m7vUuJNyDIMujKM5ow7x6xT8qfzHMDGZ1-kr6PkdORZRP6AaQBvFEDorfPxwNQfE6bdFQz"/>
+</div>
+<div class="content">
+<div class="flex items-start justify-between mb-2">
+<div>
+<h3 class="text-base font-bold text-gray-800">Large pothole causing traffic backup.</h3>
+<div class="flex items-center text-xs text-gray-500 mt-1">
+<span class="material-symbols-outlined text-sm mr-1">location_on</span>
+<span>Elm Street, Springfield</span>
+</div>
+</div>
+<span class="inline-flex items-center rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800">
+                            Reported
+                        </span>
+</div>
+<div class="flex items-center justify-between text-gray-600 mt-4 pt-3 border-t border-gray-200">
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-1.5 hover:text-[var(--primary-color)]">
+<span class="material-symbols-outlined text-xl">arrow_upward</span>
+<span class="text-sm font-semibold">128</span>
+</button>
+<button class="flex items-center gap-1.5 hover:text-[var(--primary-color)]">
+<span class="material-symbols-outlined text-xl">chat_bubble_outline</span>
+<span class="text-sm font-semibold">12</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 rounded-full bg-gray-200 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-300">
+<span class="material-symbols-outlined text-base">task_alt</span>
+                            Mark as Completed
+                        </button>
+</div>
+</div>
+</div>
+<div class="polaroid-card">
+<div class="image-container">
+<img alt="Broken Streetlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIBtNoaqciMsPf4b4T-_UIatS2pGrhon9CV1ckWppPg0xkkQkwQrMgzfOZPQspnH1Lqx0GnunmrnVGuMgwk8HJ1I3tKJDo8efUSSvhsQGdd3Fu2jF1LNFMjVFb9KDNqf28K1m6_fsNGfQ9OLdKWCa3NwRahHiuNoM6jfeYVnYeC_qXZEiIVmiJ9nu8OiuyXUy40mBh8meVW8EmWWXdvfxwPQBG4sRnqNBkP4Y-V7G3t8iFIeN4fxtH6Kc1rXHXOulkv64t6Yaahwcr"/>
+</div>
+<div class="content">
+<div class="flex items-start justify-between mb-2">
+<div>
+<h3 class="text-base font-bold text-gray-800">Streetlight out on Oak Ave corner.</h3>
+<div class="flex items-center text-xs text-gray-500 mt-1">
+<span class="material-symbols-outlined text-sm mr-1">location_on</span>
+<span>Oak Avenue, Springfield</span>
+</div>
+</div>
+<span class="inline-flex items-center rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-800">
+                            In Progress
+                        </span>
+</div>
+<div class="flex items-center justify-between text-gray-600 mt-4 pt-3 border-t border-gray-200">
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-1.5 text-[var(--primary-color)]">
+<span class="material-symbols-outlined text-xl">arrow_upward</span>
+<span class="text-sm font-semibold">256</span>
+</button>
+<button class="flex items-center gap-1.5 hover:text-[var(--primary-color)]">
+<span class="material-symbols-outlined text-xl">chat_bubble_outline</span>
+<span class="text-sm font-semibold">34</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="polaroid-card">
+<div class="image-container">
+<img alt="Overgrown Bushes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDez0H4zs8-3A2YJnpOjDyE4Vo70cw4rmZj7HKqetTknaoMiitELh5sRLUg3iFv8XRJM90lLsrjctF39Ln4WUKzm-ZT4bl2Fqi-IauEE5LyzOn1kmvadhewSJgkDsP-bm3h1UBf0wzgHEkKUyArX2DazPcFlY6iPJ3NkbKV7JKVMHwIK7BxmL1oX-FDwjdbBha58H_2ysVRZkoExJbZ65UPCu8O04XJBbmlQJhXqYzh5f8lphC1-sLX_9zP0Oq0XVYaSCtA2B9AS3Vg"/>
+</div>
+<div class="content">
+<div class="flex items-start justify-between mb-2">
+<div>
+<h3 class="text-base font-bold text-gray-800">Bushes blocking sidewalk view.</h3>
+<div class="flex items-center text-xs text-gray-500 mt-1">
+<span class="material-symbols-outlined text-sm mr-1">location_on</span>
+<span>Central Park, Springfield</span>
+</div>
+</div>
+<span class="inline-flex items-center rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800">
+                           Completed
+                        </span>
+</div>
+<div class="flex items-center justify-between text-gray-600 mt-4 pt-3 border-t border-gray-200">
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-1.5 hover:text-[var(--primary-color)]">
+<span class="material-symbols-outlined text-xl">arrow_upward</span>
+<span class="text-sm font-semibold">89</span>
+</button>
+<button class="flex items-center gap-1.5 hover:text-[var(--primary-color)]">
+<span class="material-symbols-outlined text-xl">chat_bubble_outline</span>
+<span class="text-sm font-semibold">7</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<button class="fixed bottom-24 right-4 z-20 flex items-center justify-center h-14 w-14 rounded-full bg-[var(--primary-color)] text-white shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
+<span class="material-symbols-outlined text-3xl">add</span>
+<span class="sr-only">Report Issue</span>
+</button>
+<footer class="fixed bottom-0 left-0 right-0 z-20 border-t border-gray-200 bg-white/90 backdrop-blur-md">
+<nav class="flex justify-around py-2">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home Feed</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-gray-500 hover:text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="text-xs font-medium">Map View</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-gray-500 hover:text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">flag</span>
+<span class="text-xs font-medium">My Issues</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-gray-500 hover:text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-xs font-medium">Notifications</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
