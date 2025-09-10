@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 bg-white px-8 py-4">
+<div class="flex items-center gap-3">
+<div class="size-8 text-[#ea2a33]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-gray-800 text-xl font-bold leading-tight tracking-[-0.015em]">FixMyCity</h2>
+</div>
+<div class="flex items-center gap-6">
+<nav class="flex items-center gap-6 text-sm font-medium text-gray-600">
+<a class="text-[#ea2a33] font-semibold" href="#">Dashboard</a>
+<a class="hover:text-gray-900" href="#">Issues</a>
+<a class="hover:text-gray-900" href="#">Users</a>
+<a class="hover:text-gray-900" href="#">Reports</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-gray-500 hover:text-gray-800">notifications</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMosYIh40adPb94x4G8MVoNKgw_O2wFeGYETTLUe_zda-mrDweXs_DZn6EReE2RwGi_Kt-7gvkZ3IrZQyHICVX9PKnQhPj0548dYJmAFtqNOYEGnCmdrwahzX_4tLFLhE6YeNYbFjug-TqrOoXkkQcw3XYx2Yx0_jzvUHFhuN5bt9bxXfNRwbs1ef3GwWj-OffEry5J6b9nrzBaXn2NdxBFB-kq9zvVRuRyUgjDEplrsOXCIBzP3R6BH23myk4JnU8z_s8hXujmIuS");'></div>
+</div>
+</div>
+</header>
+<main class="flex-1 px-8 py-10 lg:px-16">
+<div class="mx-auto max-w-7xl">
+<div class="mb-8 flex items-center justify-between">
+<div>
+<h1 class="text-3xl font-bold text-gray-900">Dashboard</h1>
+<p class="text-gray-500">Overview of city issues and resolutions</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+                  Last 30 days
+                </button>
+<button class="flex items-center gap-2 rounded-lg bg-[#ea2a33] px-4 py-2 text-sm font-medium text-white hover:bg-red-700">
+<span class="material-symbols-outlined text-base">add</span>
+                  Create Report
+                </button>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<div class="rounded-lg border border-gray-200 bg-white p-5">
+<p class="text-sm font-medium text-gray-500">Total Issues</p>
+<p class="text-3xl font-bold text-gray-900">1,250</p>
+</div>
+<div class="rounded-lg border border-gray-200 bg-white p-5">
+<p class="text-sm font-medium text-gray-500">Pending</p>
+<p class="text-3xl font-bold text-gray-900">320</p>
+</div>
+<div class="rounded-lg border border-gray-200 bg-white p-5">
+<p class="text-sm font-medium text-gray-500">In Progress</p>
+<p class="text-3xl font-bold text-gray-900">450</p>
+</div>
+<div class="rounded-lg border border-gray-200 bg-white p-5">
+<p class="text-sm font-medium text-gray-500">Completed</p>
+<p class="text-3xl font-bold text-gray-900">480</p>
+</div>
+</div>
+<div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
+<div class="rounded-lg border border-gray-200 bg-white p-5">
+<p class="text-sm font-medium text-gray-500">Avg. Resolution Time</p>
+<p class="text-3xl font-bold text-gray-900">2 days</p>
+</div>
+<div class="rounded-lg border border-gray-200 bg-white p-5">
+<p class="text-sm font-medium text-gray-500">Top Category</p>
+<p class="text-3xl font-bold text-gray-900">Potholes</p>
+</div>
+<div class="rounded-lg border border-gray-200 bg-white p-5">
+<p class="text-sm font-medium text-gray-500">High-Report Area</p>
+<p class="text-3xl font-bold text-gray-900">Downtown</p>
+</div>
+</div>
+<div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-5">
+<div class="col-span-1 rounded-lg border border-gray-200 bg-white p-6 lg:col-span-3">
+<div class="flex items-start justify-between">
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Issues Over Time</h3>
+<p class="text-sm text-gray-500">Last 6 Months</p>
+</div>
+<div class="flex items-center gap-1 text-green-600">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="text-sm font-semibold">+12%</span>
+</div>
+</div>
+<div class="mt-4 h-72">
+<svg fill="none" height="100%" preserveAspectRatio="none" viewBox="0 0 472 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H0V109Z" fill="url(#paint0_linear_1)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#ea2a33" stroke-linecap="round" stroke-width="2"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="#ea2a33" stop-opacity="0.2"></stop>
+<stop offset="1" stop-color="#ea2a33" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+</svg>
+</div>
+<div class="mt-4 flex justify-between text-xs font-medium text-gray-500">
+<span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+</div>
+</div>
+<div class="col-span-1 rounded-lg border border-gray-200 bg-white p-6 lg:col-span-2">
+<div class="flex items-start justify-between">
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Issue Categories</h3>
+<p class="text-sm text-gray-500">This Month</p>
+</div>
+<div class="flex items-center gap-1 text-red-600">
+<span class="material-symbols-outlined">trending_down</span>
+<span class="text-sm font-semibold">-5%</span>
+</div>
+</div>
+<div class="mt-4 grid h-72 grid-cols-6 items-end gap-4 px-2">
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded-t-lg bg-red-100" style="height: 50%;"></div>
+<p class="text-center text-xs font-medium text-gray-500">Potholes</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded-t-lg bg-red-100" style="height: 40%;"></div>
+<p class="text-center text-xs font-medium text-gray-500">Street Lights</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded-t-lg bg-red-100" style="height: 80%;"></div>
+<p class="text-center text-xs font-medium text-gray-500">Graffiti</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded-t-lg bg-red-100" style="height: 50%;"></div>
+<p class="text-center text-xs font-medium text-gray-500">Traffic Signals</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded-t-lg bg-red-100" style="height: 30%;"></div>
+<p class="text-center text-xs font-medium text-gray-500">Road Closures</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full rounded-t-lg bg-red-100" style="height: 30%;"></div>
+<p class="text-center text-xs font-medium text-gray-500">Other</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

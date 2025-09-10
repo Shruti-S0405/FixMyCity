@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>FixMyCity Dashboard</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #ea2a33;
+        --secondary-color: #f5f5f5;
+        --text-primary: #1a1a1a;
+        --text-secondary: #6b7280;
+      }
+      .priority-high {
+        --priority-color: #ef4444;
+      }
+      .priority-medium {
+        --priority-color: #f97316;
+      }
+      .priority-low {
+        --priority-color: #22c55e;
+      }
+    </style>
+</head>
+<body class="bg-gray-50" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 bg-white px-6 py-3">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-3 text-2xl font-bold text-[var(--text-primary)]">
+<span class="material-symbols-outlined text-[var(--primary-color)] text-3xl"> location_city </span>
+<h1>FixMyCity</h1>
+</div>
+<nav class="hidden md:flex items-center gap-4">
+<a class="text-sm font-medium text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">Dashboard</a>
+<a class="text-sm font-medium text-[var(--primary-color)]" href="#">Issues</a>
+<a class="text-sm font-medium text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">Users</a>
+<a class="text-sm font-medium text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">Analytics</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"> search </span>
+<input class="form-input w-full rounded-full border-gray-300 bg-gray-100 py-2 pl-10 pr-4 text-sm text-[var(--text-primary)] focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" placeholder="Search issues..." type="search"/>
+</div>
+<button class="md:hidden p-2 rounded-full hover:bg-gray-100">
+<span class="material-symbols-outlined text-gray-600">search</span>
+</button>
+<button class="relative p-2 rounded-full hover:bg-gray-100">
+<span class="material-symbols-outlined text-gray-600">notifications</span>
+<span class="absolute top-1 right-1 block h-2 w-2 rounded-full bg-[var(--primary-color)]"></span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-white shadow-sm" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4fbK3E4HeMDuU3Jm2INzu8uAwwFSf5lbFFF72uSBGhiBo6sxNKs6atGbGG4x_qf-rjmdTKZALcL83cVUltDzJuZhhy1TGq27LlXSBtncf65hg48LZLVWQR5yp4YIzCH1xTVWekVutcVzkVLBuKoEX4Fdk-PwmdGrkbnwilnATyUngsY4DZIY1ck28dKPrZZsQcwzur-i_810vuo-0iZEolv1rv3husAC0iCpI9pApNXj9L5DqAMD7BZpgx0YnvCyfaNV6NHDS1-f4");'></div>
+</div>
+</header>
+<main class="flex-1 px-4 py-8 sm:px-6 lg:px-8">
+<div class="mx-auto max-w-7xl">
+<div class="mb-8">
+<h2 class="text-3xl font-bold tracking-tight text-[var(--text-primary)]">Reported Issues</h2>
+<p class="mt-1 text-base text-[var(--text-secondary)]">Manage and track all reported issues in the city.</p>
+</div>
+<div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-2">
+<button class="flex h-9 items-center justify-center gap-x-2 rounded-full border border-gray-300 bg-white px-4 text-sm font-medium text-gray-700 hover:bg-gray-50">
+<span>Category</span>
+<span class="material-symbols-outlined text-base"> expand_more </span>
+</button>
+<button class="flex h-9 items-center justify-center gap-x-2 rounded-full border border-gray-300 bg-white px-4 text-sm font-medium text-gray-700 hover:bg-gray-50">
+<span>Status</span>
+<span class="material-symbols-outlined text-base"> expand_more </span>
+</button>
+<button class="flex h-9 items-center justify-center gap-x-2 rounded-full border border-gray-300 bg-white px-4 text-sm font-medium text-gray-700 hover:bg-gray-50">
+<span>Location</span>
+<span class="material-symbols-outlined text-base"> expand_more </span>
+</button>
+<button class="flex h-9 items-center justify-center gap-x-2 rounded-full border border-gray-300 bg-white px-4 text-sm font-medium text-gray-700 hover:bg-gray-50">
+<span>Priority</span>
+<span class="material-symbols-outlined text-base"> expand_more </span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex h-9 items-center justify-center gap-x-2 rounded-full bg-white px-4 text-sm font-medium text-gray-700 border border-gray-300 hover:bg-gray-50">
+<span class="material-symbols-outlined text-base"> view_list </span>
+<span>List</span>
+</button>
+<button class="flex h-9 items-center justify-center gap-x-2 rounded-full bg-gray-100 px-4 text-sm font-medium text-[var(--primary-color)] border border-gray-300">
+<span class="material-symbols-outlined text-base"> grid_view </span>
+<span>Grid</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-6 @container sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+<div class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md">
+<div class="relative">
+<div class="bg-center bg-no-repeat h-40 w-full bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfp2MmC_IMrHWpdiN4Z6HZ16z95g1rwTM9GnGI-opbZh3YiYzxp4Osk8H0AVO1_YpEKMW78r05NwCnS9MT3n0BkoL21xUzhZ0jJP5AWbHGEafvEOgUi4yX_Jrl3hiIs9UH4MbpECNtWVgF_gvYEr2dhxRWooo0SY-JQqu_oa2s_if0gKsExrz0qJTV3SNx86pIa2RzqQS5QfS2ppnoQP5u4RT7ezn7zZwd-2oHjxzgWYlMao5HEx4s5tfL0Q24S7zzwJYDTLBt9A1H");'></div>
+<div class="priority-high absolute top-2 right-2 flex items-center gap-1 rounded-full bg-[var(--priority-color)] px-2 py-1 text-xs font-semibold text-white">
+<span class="material-symbols-outlined text-sm"> priority_high </span>
+<span>High</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col p-4">
+<p class="flex-1 text-sm font-medium text-[var(--text-primary)]">Large pothole causing traffic hazard.</p>
+<p class="mt-1 flex items-center gap-1 text-xs text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-sm"> location_on </span>
+<span>123 Main Street, Anytown</span>
+</p>
+<div class="mt-3 flex items-center justify-between text-sm text-[var(--text-secondary)]">
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base"> thumb_up </span>
+<span class="text-xs">12</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base"> comment </span>
+<span class="text-xs">5</span>
+</div>
+</div>
+<span class="text-xs font-medium text-orange-500 bg-orange-100 px-2 py-1 rounded-full">In Progress</span>
+</div>
+</div>
+<div class="border-t border-gray-200 p-2">
+<button class="w-full rounded-md px-3 py-1.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100">Mark as Completed</button>
+</div>
+</div>
+<div class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md">
+<div class="relative">
+<div class="bg-center bg-no-repeat h-40 w-full bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIMWkQLCuhxRjFD5rG_P9PjzotXV56sbrbiEVshITNNpMYxq-p1tlhoI-c3y-tUTD_FQCnc7kFA9FV-mis73qaVfVL-OsNJI-Y5bWw3rPR5jyzZxoJ6mU9mKGL-K0K9uaEh1TNUQ3XlC5e8HnjbhtuhSLE4lq1CbiBiISINBQqNUd8NFZFwdoqaLXNnNAHk0tDy9aACE-3SbPIbirgKupTkCElBy7MEwe--L07plsbKHA9yu4fp1EeCYakSVlkIwI28Kb0Qmqsd1ss");'></div>
+<div class="priority-medium absolute top-2 right-2 flex items-center gap-1 rounded-full bg-[var(--priority-color)] px-2 py-1 text-xs font-semibold text-white">
+<span class="material-symbols-outlined text-sm"> signal_cellular_alt </span>
+<span>Medium</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col p-4">
+<p class="flex-1 text-sm font-medium text-[var(--text-primary)]">Streetlight out at intersection.</p>
+<p class="mt-1 flex items-center gap-1 text-xs text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-sm"> location_on </span>
+<span>Corner of Elm and Oak</span>
+</p>
+<div class="mt-3 flex items-center justify-between text-sm text-[var(--text-secondary)]">
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base"> thumb_up </span>
+<span class="text-xs">8</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base"> comment </span>
+<span class="text-xs">2</span>
+</div>
+</div>
+<span class="text-xs font-medium text-green-600 bg-green-100 px-2 py-1 rounded-full">Completed</span>
+</div>
+</div>
+<div class="border-t border-gray-200 p-2 flex items-center gap-2">
+<button class="flex-1 rounded-md px-3 py-1.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100">View Proof</button>
+<button class="flex-1 rounded-md bg-gray-200 px-3 py-1.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-300">
+<span class="material-symbols-outlined text-base align-bottom"> upload </span>
+</button>
+</div>
+</div>
+<div class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md">
+<div class="relative">
+<div class="bg-center bg-no-repeat h-40 w-full bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCed36kQW4z6rG8qzQbk_GNwpm1Rd4CgA7Hc2hdPagZCQBCaVd4nkUWzoUW0cGrMs-UbPHi4FQwd7MilGo5YvmE22DfOxsOC33XGEOwVXB3y9vc_f0JEvuoXH1PsyM9fJouWq4JjKhk0qVf5UJdD2PASFlf7QcGz85AZj3buF4VVglh0VIYM8nh8jdRhTjTdDQhenjH-kEwhUtzIRnZIIbsEw2Mx1Zxk6-lhSd9h2KGDGu_mt_tqpqwf-UpSEOmjV4u2L8_RJUr3Cu9");'></div>
+<div class="priority-low absolute top-2 right-2 flex items-center gap-1 rounded-full bg-[var(--priority-color)] px-2 py-1 text-xs font-semibold text-white">
+<span class="material-symbols-outlined text-sm"> low_priority </span>
+<span>Low</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col p-4">
+<p class="flex-1 text-sm font-medium text-[var(--text-primary)]">Graffiti on public building.</p>
+<p class="mt-1 flex items-center gap-1 text-xs text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-sm"> location_on </span>
+<span>456 Park Avenue, Anytown</span>
+</p>
+<div class="mt-3 flex items-center justify-between text-sm text-[var(--text-secondary)]">
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base"> thumb_up </span>
+<span class="text-xs">15</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base"> comment </span>
+<span class="text-xs">7</span>
+</div>
+</div>
+<span class="text-xs font-medium text-gray-500 bg-gray-100 px-2 py-1 rounded-full">Reported</span>
+</div>
+</div>
+<div class="border-t border-gray-200 p-2 flex items-center gap-2">
+<button class="flex-1 rounded-md px-3 py-1.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100">In Progress</button>
+<button class="flex-1 rounded-md px-3 py-1.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100">Completed</button>
+</div>
+</div>
+<div class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md">
+<div class="relative">
+<div class="bg-center bg-no-repeat h-40 w-full bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBw8WCI_k38-iBxi1O6PMknEtLzTzQSZBAcISqFl6hDfKZL210kwWf2D7aVhw6p5cfxNRIb8i8RpxLi0VESdSwsIbk0d3dz6t_XLyo4VVbzoNTa79m4h2KitONVNOUllcXBI1l48dMqDp7Jy17-XdMULf9aEgUMJGIEeSO93_rbBD15RhfWVvuuX-N5MjcSc3XXW-Bvs0T5JgF7jfqUCHispgcNE87w_BNAgqsiSEFRYFlpLqV4vLYhCZpgrYZ-K4FCFjJDNWPVZwEN");'></div>
+<div class="priority-high absolute top-2 right-2 flex items-center gap-1 rounded-full bg-[var(--priority-color)] px-2 py-1 text-xs font-semibold text-white">
+<span class="material-symbols-outlined text-sm"> priority_high </span>
+<span>High</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col p-4">
+<p class="flex-1 text-sm font-medium text-[var(--text-primary)]">Drain blocked causing flooding.</p>
+<p class="mt-1 flex items-center gap-1 text-xs text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-sm"> location_on </span>
+<span>789 River Road, Anytown</span>
+</p>
+<div class="mt-3 flex items-center justify-between text-sm text-[var(--text-secondary)]">
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base"> thumb_up </span>
+<span class="text-xs">10</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base"> comment </span>
+<span class="text-xs">3</span>
+</div>
+</div>
+<span class="text-xs font-medium text-green-600 bg-green-100 px-2 py-1 rounded-full">Completed</span>
+</div>
+</div>
+<div class="border-t border-gray-200 p-2 flex items-center gap-2">
+<button class="flex-1 rounded-md px-3 py-1.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-100">View Proof</button>
+<button class="flex-1 rounded-md bg-gray-200 px-3 py-1.5 text-center text-sm font-semibold text-gray-700 hover:bg-gray-300">
+<span class="material-symbols-outlined text-base align-bottom"> upload </span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
